@@ -4,13 +4,14 @@ using UnityEngine.UI;
 
 public class MenuNetworkHUD : MonoBehaviour
 {
-    public Button hostButton,serverButton,clientButton;
+    public Button stopButton,hostButton,serverButton,clientButton;
 
     private void Start()
     {
         hostButton.onClick.AddListener(ButtonHost);
         serverButton.onClick.AddListener(ServerButton);
         clientButton.onClick.AddListener(ClientButton);
+        stopButton.onClick.AddListener(ButtonStop);
     }
 
     private void ButtonHost()
